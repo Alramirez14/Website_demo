@@ -1,6 +1,3 @@
-
-
-
 var map = L.map('map', {
     zoomControl:false, maxZoom:28, minZoom:1
 }).fitBounds([[43.51713825173777,-124.34314042998588],[44.114053612364536,-123.0532517658581]]);
@@ -247,3 +244,5 @@ map.on("layeradd", function(){
 map.on("layerremove", function(){
     resetLabels([layer_Study_sites_4]);
 });
+
+map.fitBounds(layer_Catchment_polygons_3.getBounds());
